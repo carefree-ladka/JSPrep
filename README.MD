@@ -1,1 +1,3 @@
-# जॉन विक् की भावे ध्यानस्थितः च समर्पितः च भव।
+# Commonly asked interview hands-on problems.
+
+## Raise PRs to add more problems to this repository
