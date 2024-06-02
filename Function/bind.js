@@ -17,4 +17,4 @@ Function.prototype.myBind = function (ctx, ...args) {
   };
 };
 
-console.log(person.sayFullName.bind(john, "Uttar Pradesh")());
+console.log(person.sayFullName.bind(john, "Uttar Pradesh")("Lucknow"));

@@ -89,6 +89,14 @@ class MyPromise {
       }
     );
   }
+
+  static resolve(value) {
+    return new MyPromise((resolve) => resolve(value));
+  }
+
+  static reject(reason) {
+    return new MyPromise((_, reject) => reject(reason));
+  }
 }
 
 const getUser = () => {
@@ -104,4 +112,5 @@ const getUser = () => {
 getUser()
   .then((x) => console.log(x))
   .catch((e) => console.log(e))
-  .finally(() => console.log("next..."));
+  .finally(() => console.log("next..."))
+  .finally(() => console.log('lol'))
